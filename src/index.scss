@@ -6,6 +6,7 @@ body {
   color: #2d3038;
   font-size: 1rem;
   background-color: #fff;
+  text-align: left;
 }
 
 .container {
@@ -23,11 +24,11 @@ body {
   margin-left: -15px;
 }
 
-.u-margin-top {
-  margin-top: 80px;
+.u-padding-top {
+  padding-top: 80px;
 }
-.u-margin-bottom {
-  margin-bottom: 100px;
+.u-padding-bottom {
+  padding-bottom: 100px;
 }
 
 .col-sm-9 {
@@ -52,4 +53,8 @@ body {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.bg-color {
+  background-color: #f9f9f9 !important;
 }

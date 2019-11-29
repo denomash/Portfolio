@@ -3,7 +3,7 @@ import './about.scss';
 
 export const About = () => {
   return (
-    <div className="about-section u-margin-top u-margin-bottom">
+    <div className="about-section u-padding-top u-padding-bottom">
       <div className="container">
         <div className="row">
           <div className="col-md-4">
