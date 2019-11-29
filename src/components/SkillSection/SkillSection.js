@@ -22,7 +22,10 @@ const SkillSection = () => {
                 </p>
               </div>
 
+              {/* Skill proficiency section */}
               <div className="progress-content">
+                {/* Skill proficiency Right */}
+
                 <div className="rating-bar bar-left">
                   <label>Javascript</label>
                   <span className="rating-count pull-right">90%</span>
@@ -48,6 +51,8 @@ const SkillSection = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* Skill proficiency Left */}
 
                 <div className="rating-bar bar-right">
                   <label>Node/Express</label>
@@ -75,6 +80,34 @@ const SkillSection = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Language proficiency */}
+              <div className="language-proficiency">
+                <div className="skill-info">
+                  <h4>Language Skill</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                  </p>
+                </div>
+
+                <div className="language-proficiency__chart">
+                  <div className="chart">
+                    <div className="language-proficiency__circle">100%</div>
+                    <h5>English</h5>
+                  </div>
+                  <div className="chart">
+                    <div className="language-proficiency__circle c-1">100%</div>
+                    <h5>Swahili</h5>
+                  </div>
+                  <div className="chart">
+                    <div className="language-proficiency__circle c-2">100%</div>
+                    <h5>Kikuyu</h5>
+                  </div>
+                </div>
+              </div>
+              {/* end Language proficiency */}
             </div>
           </div>
         </div>
