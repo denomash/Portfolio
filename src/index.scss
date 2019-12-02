@@ -31,6 +31,24 @@ body {
   padding-bottom: 100px;
 }
 
+.col-sm-6 {
+  position: relative;
+  width: 45%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  // overflow: hidden;
+}
+
+.col-sm-12 {
+  position: relative;
+  width: 94%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  // overflow: hidden;
+}
+
 .col-sm-9 {
   -ms-flex: 0 0 75%;
   flex: 0 0 75%;
