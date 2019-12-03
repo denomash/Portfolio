@@ -1,0 +1,58 @@
+.social-inline {
+  display: flex;
+  font-size: 16px;
+
+  p {
+    margin: 0;
+    &:not(last-child) {
+      padding-right: 10px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #2d3038;
+  }
+}
+
+.transitionicons {
+  transition: color 0.5s ease-in-out;
+}
+
+.facebook {
+  @extend .transitionicons;
+
+  &:hover {
+    color: #4060a5;
+  }
+}
+.twitter {
+  @extend .transitionicons;
+
+  &:hover {
+    color: #00abe3;
+  }
+}
+
+.google {
+  @extend .transitionicons;
+
+  &:hover {
+    color: #e64522;
+  }
+}
+.linkedin {
+  @extend .transitionicons;
+
+  &:hover {
+    color: #0077b5;
+  }
+}
+
+.github {
+  @extend .transitionicons;
+
+  &:hover {
+    color: #417db9;
+  }
+}

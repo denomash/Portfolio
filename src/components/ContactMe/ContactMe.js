@@ -1,16 +1,16 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import {
   faMapSigns,
-  faPhone,
+  faPhoneAlt,
   faEnvelope,
   faExternalLinkAlt,
   faCommentDots
 } from '@fortawesome/free-solid-svg-icons';
 
 import './contact-me.scss';
+import SocialLinks from '../SocialLinks/SocialLinks';
 
 const ContactMe = () => {
   return (
@@ -47,7 +47,7 @@ const ContactMe = () => {
 
                   <li>
                     <div className="icons icon1">
-                      <FontAwesomeIcon icon={faPhone} />
+                      <FontAwesomeIcon icon={faPhoneAlt} />
                     </div>
                     <h3>Mobile Number</h3>
                     <p>+254 790 005 253</p>
@@ -66,7 +66,9 @@ const ContactMe = () => {
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </div>
                     <h3>Social Profiles</h3>
-                    <p></p>
+                    <p>
+                      <SocialLinks />
+                    </p>
                   </li>
                 </ul>
               </div>
