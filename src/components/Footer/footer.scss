@@ -1,0 +1,28 @@
+#footer {
+  color: #fff;
+  background-color: #87c05e;
+  padding-top: 22px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 5px;
+    transition: color 0.5s ease-in-out;
+
+    &:hover {
+      color: #6bff00;
+    }
+
+    p {
+      margin: 5px;
+    }
+  }
+}
