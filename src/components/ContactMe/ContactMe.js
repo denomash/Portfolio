@@ -1,4 +1,15 @@
 import React from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import {
+  faMapSigns,
+  faPhone,
+  faEnvelope,
+  faExternalLinkAlt,
+  faCommentDots
+} from '@fortawesome/free-solid-svg-icons';
+
 import './contact-me.scss';
 
 const ContactMe = () => {
@@ -27,25 +38,33 @@ const ContactMe = () => {
               <div className="address">
                 <ul>
                   <li>
-                    <div className="icons"></div>
+                    <div className="icons">
+                      <FontAwesomeIcon icon={faMapSigns} />
+                    </div>
                     <h3>Address</h3>
                     <p>Mirema drive, Mirema, Kenya</p>
                   </li>
 
                   <li>
-                    <div className="icons"></div>
+                    <div className="icons icon1">
+                      <FontAwesomeIcon icon={faPhone} />
+                    </div>
                     <h3>Mobile Number</h3>
                     <p>+254 790 005 253</p>
                   </li>
 
                   <li>
-                    <div className="icons"></div>
+                    <div className="icons icon2">
+                      <FontAwesomeIcon icon={faEnvelope} />
+                    </div>
                     <h3>Email Address</h3>
                     <p>dennismacharia4747@gmail.com</p>
                   </li>
 
                   <li>
-                    <div className="icons"></div>
+                    <div className="icons icon3">
+                      <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    </div>
                     <h3>Social Profiles</h3>
                     <p></p>
                   </li>
@@ -58,7 +77,9 @@ const ContactMe = () => {
 
                 <div className="contact-info">
                   <div className="tittle">
-                    <div className="icons"></div>
+                    <div className="icons icon4">
+                      <FontAwesomeIcon icon={faCommentDots} />
+                    </div>
                     <h3>Leave me a message</h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
