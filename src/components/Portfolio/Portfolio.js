@@ -41,21 +41,23 @@ const Portfolio = () => {
                         src={plugaddons}
                         alt="plugaddons"
                       />
+                      <div className="portfolio__overlay">Yooh</div>
                     </div>
                   </div>
 
                   <div className="col-sm-6">
-                    <div className="portfolio-item">
+                    <div className="portfolio__item">
                       <img
                         className="portfolio__img"
                         src={wajomba}
                         alt="child care"
                       />
+                      <div className="portfolio__overlay">Yooh</div>
                     </div>
                   </div>
 
                   <div className="col-sm-6">
-                    <div className="portfolio-item">
+                    <div className="portfolio__item">
                       {/* <img
                         className="portfolio__img"
                         src={spaceX}
@@ -67,16 +69,18 @@ const Portfolio = () => {
                         src={burgetify}
                         alt="burgetify"
                       />
+                      <div className="portfolio__overlay">Yooh</div>
                     </div>
                   </div>
 
                   <div className="col-sm-6">
-                    <div className="portfolio-item">
+                    <div className="portfolio__item">
                       <img
                         className="portfolio__img"
                         src={fastFood}
                         alt="fastFood"
                       />
+                      <div className="portfolio__overlay">Yooh</div>
                     </div>
                   </div>
                 </div>
