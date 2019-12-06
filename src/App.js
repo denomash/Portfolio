@@ -5,6 +5,7 @@ import { About } from './components/About/About';
 import SkillSection from './components/SkillSection/SkillSection';
 import ContactMe from './components/ContactMe/ContactMe';
 import { Footer } from './components/Footer/Footer';
+import Portfolio from './components/Portfolio/Portfolio';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <About />
       <SkillSection />
+      <Portfolio />
       <ContactMe />
       <Footer />
     </div>
