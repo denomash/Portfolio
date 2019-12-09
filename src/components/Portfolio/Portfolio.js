@@ -36,50 +36,72 @@ const Portfolio = () => {
                 <div className="row">
                   <div className="col-sm-6">
                     <div className="portfolio__item">
-                      <img
-                        className="portfolio__img"
-                        src={plugaddons}
-                        alt="plugaddons"
-                      />
+                      <div className="portfolio__item-top"></div>
+                      <div className="portfolio__item-title">Plugaddons</div>
+
+                      <div className="portfolio__item-content">
+                        <ul>
+                          <li>React</li>
+                          <li>CSS</li>
+                          <li>HTML5</li>
+                          <li>Firebase</li>
+                        </ul>
+                      </div>
+
                       <div className="portfolio__overlay">Yooh</div>
                     </div>
                   </div>
 
                   <div className="col-sm-6">
                     <div className="portfolio__item">
-                      <img
-                        className="portfolio__img"
-                        src={wajomba}
-                        alt="child care"
-                      />
+                      <div className="portfolio__item-top"></div>
+                      <div className="portfolio__item-title">Child Care</div>
+
+                      <div className="portfolio__item-content">
+                        <ul>
+                          <li>Gatsby</li>
+                          <li>SASS</li>
+                          <li>HTML5</li>
+                          <li>Netlify</li>
+                        </ul>
+                      </div>
+
                       <div className="portfolio__overlay">Yooh</div>
                     </div>
                   </div>
 
                   <div className="col-sm-6">
                     <div className="portfolio__item">
-                      {/* <img
-                        className="portfolio__img"
-                        src={spaceX}
-                        alt="spaceX"
-                      /> */}
+                      <div className="portfolio__item-top"></div>
+                      <div className="portfolio__item-title">Burgetify</div>
 
-                      <img
-                        className="portfolio__img"
-                        src={burgetify}
-                        alt="burgetify"
-                      />
+                      <div className="portfolio__item-content">
+                        <ul>
+                          <li>React</li>
+                          <li>Redux</li>
+                          <li>Webpack</li>
+                          <li>Firebase</li>
+                        </ul>
+                      </div>
+
                       <div className="portfolio__overlay">Yooh</div>
                     </div>
                   </div>
 
                   <div className="col-sm-6">
                     <div className="portfolio__item">
-                      <img
-                        className="portfolio__img"
-                        src={fastFood}
-                        alt="fastFood"
-                      />
+                      <div className="portfolio__item-top"></div>
+                      <div className="portfolio__item-title">Fast-food API</div>
+
+                      <div className="portfolio__item-content">
+                        <ul>
+                          <li>Python</li>
+                          <li>Flask</li>
+                          <li>Apiary</li>
+                          <li>Heroku</li>
+                        </ul>
+                      </div>
+
                       <div className="portfolio__overlay">Yooh</div>
                     </div>
                   </div>
