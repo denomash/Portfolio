@@ -48,7 +48,26 @@ const Portfolio = () => {
                         </ul>
                       </div>
 
-                      <div className="portfolio__overlay">Yooh</div>
+                      <div className="portfolio__overlay">
+                        <div className="portfolio__overlay-desc">
+                          This is a static page. Inspiration was gotten from
+                          uplabs
+                        </div>
+                        <div className="portfolio__overlay-cont">
+                          <a
+                            href="https://plug-addons.firebaseapp.com/"
+                            target="_blank"
+                          >
+                            demo
+                          </a>
+                          <a
+                            href="https://github.com/denomash/plug-Addons-site"
+                            target="_blank"
+                          >
+                            source
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -66,7 +85,26 @@ const Portfolio = () => {
                         </ul>
                       </div>
 
-                      <div className="portfolio__overlay">Yooh</div>
+                      <div className="portfolio__overlay">
+                        <div className="portfolio__overlay-desc">
+                          This is a static page aimed to level up css. We
+                          colaborated 3 people with samuel as our mentor
+                        </div>
+                        <div className="portfolio__overlay-cont">
+                          <a
+                            href="https://happy-rosalind-b11033.netlify.com/"
+                            target="_blank"
+                          >
+                            demo
+                          </a>
+                          <a
+                            href="https://github.com/younggeeks/childcare-UII"
+                            target="_blank"
+                          >
+                            source
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -84,7 +122,26 @@ const Portfolio = () => {
                         </ul>
                       </div>
 
-                      <div className="portfolio__overlay">Yooh</div>
+                      <div className="portfolio__overlay">
+                        <div className="portfolio__overlay-desc">
+                          This is a budget management application for tracking
+                          your expenses
+                        </div>
+                        <div className="portfolio__overlay-cont">
+                          <a
+                            href="https://burgetify.herokuapp.com/"
+                            target="_blank"
+                          >
+                            demo
+                          </a>
+                          <a
+                            href="https://github.com/denomash/budgetify"
+                            target="_blank"
+                          >
+                            source
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -102,7 +159,26 @@ const Portfolio = () => {
                         </ul>
                       </div>
 
-                      <div className="portfolio__overlay">Yooh</div>
+                      <div className="portfolio__overlay">
+                        <div className="portfolio__overlay-desc">
+                          This is a fast food API that allow customers to order
+                          food.
+                        </div>
+                        <div className="portfolio__overlay-cont">
+                          <a
+                            href="https://foodapiv2.docs.apiary.io/#"
+                            target="_blank"
+                          >
+                            demo
+                          </a>
+                          <a
+                            href="https://github.com/denomash/food-api"
+                            target="_blank"
+                          >
+                            source
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
