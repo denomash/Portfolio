@@ -13,7 +13,7 @@ import './sociallinks.scss';
 const SocialLinks = () => {
   return (
     <div className="social-inline">
-      <p>
+      <div>
         <a
           href="https://github.com/denomash/"
           target="_blank"
@@ -21,8 +21,8 @@ const SocialLinks = () => {
         >
           <FontAwesomeIcon icon={faGithubAlt} />
         </a>
-      </p>
-      <p>
+      </div>
+      <div>
         <a
           href="https://www.linkedin.com/in/dennis-macharia-206762137/"
           target="_blank"
@@ -30,22 +30,22 @@ const SocialLinks = () => {
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
-      </p>
-      <p>
+      </div>
+      <div>
         <a href="#" className="facebook">
           <FontAwesomeIcon icon={faFacebookF} />
         </a>
-      </p>
-      <p>
+      </div>
+      <div>
         <a href="#" className="twitter">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
-      </p>
-      <p>
+      </div>
+      <div>
         <a href="#" className="google">
           <FontAwesomeIcon icon={faGooglePlusG} />
         </a>
-      </p>
+      </div>
     </div>
   );
 };

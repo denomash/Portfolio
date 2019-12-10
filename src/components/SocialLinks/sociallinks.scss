@@ -2,11 +2,8 @@
   display: flex;
   font-size: 16px;
 
-  p {
-    margin: 0;
-    &:not(last-child) {
-      padding-right: 10px;
-    }
+  & > *:not(last-child) {
+    padding-right: 10px;
   }
 
   a {

@@ -1,8 +1,7 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 import './header.scss';
+import SocialLinks from '../SocialLinks/SocialLinks';
 
 const Header = () => {
   return (
@@ -12,13 +11,7 @@ const Header = () => {
           <div className="col-sm-9">
             <div className="banner-content">
               <div className="banner-social">
-                {/* <ul>
-                <li>
-                  <a href="/#">
-                    <FontAwesomeIcon icon={faCoffee} />
-                  </a>
-                </li>
-              </ul> */}
+                <SocialLinks />
               </div>
               <div className="banner-info">
                 <h1>Hello, I am</h1>
