@@ -4,36 +4,36 @@ body {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   color: #2d3038;
-  font-size: 2rem;
+  font-size: 1rem;
   background-color: #fff;
   text-align: left;
 }
 
 .container {
-  width: 100%;
+  width: 80rem;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
+// @media only screen and (min-width: 1200px) {
+//   .container {
+//     max-width: 80%;
+//   }
+// }
 
-@media only screen and (min-width: 668px) and (max-width: 1199px) {
-  .container {
-    max-width: 80%;
-  }
-}
+// @media only screen and (min-width: 668px) and (max-width: 1199px) {
+//   .container {
+//     max-width: 80%;
+//   }
+// }
 
-@media only screen and (min-width: 320px) and (max-width: 667px) {
-  .container {
-    max-width: 80%;
-  }
-}
+// @media only screen and (min-width: 320px) and (max-width: 667px) {
+//   .container {
+//     max-width: 80%;
+//   }
+// }
 .row {
   display: flex;
   flex-wrap: wrap;
