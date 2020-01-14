@@ -28,11 +28,7 @@ const ContactMe = () => {
             <div className="section-content">
               <div className="skill-info">
                 <h4>Lets Keep In Touch</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
+                <p>Here is my address, contact details and social links</p>
               </div>
 
               <div className="address">
@@ -84,9 +80,8 @@ const ContactMe = () => {
                     </div>
                     <h3>Leave me a message</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam.
+                      Please feel free to contact me for any work or suggestions
+                      below
                     </p>
                   </div>
                 </div>

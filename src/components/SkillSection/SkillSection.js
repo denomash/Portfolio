@@ -16,9 +16,9 @@ const SkillSection = () => {
               <div className="skill-info">
                 <h4>Experience Skill</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
+                  Hello, I’m a Dennis, web-developer based in Nairobi, Kenya. I
+                  have rich experience in web site building and customization.
+                  Also I am good at
                 </p>
               </div>
 
@@ -85,11 +85,7 @@ const SkillSection = () => {
               <div className="language-proficiency">
                 <div className="skill-info">
                   <h4>Language Skill</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
-                  </p>
+                  <p>Langueges that I can fluently communicate in.</p>
                 </div>
 
                 <div className="language-proficiency__chart">
@@ -100,10 +96,6 @@ const SkillSection = () => {
                   <div className="chart">
                     <div className="language-proficiency__circle c-1">100%</div>
                     <h5>Swahili</h5>
-                  </div>
-                  <div className="chart">
-                    <div className="language-proficiency__circle c-2">100%</div>
-                    <h5>Kikuyu</h5>
                   </div>
                 </div>
               </div>

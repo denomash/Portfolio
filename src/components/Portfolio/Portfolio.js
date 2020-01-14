@@ -26,9 +26,8 @@ const Portfolio = () => {
               <div className="skill-info">
                 <h4>My Recent Work</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
+                  Listed below are some of my personal projects with a demo and
+                  repository links attached.
                 </p>
               </div>
 
