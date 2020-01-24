@@ -18,8 +18,9 @@ export const About = () => {
                 complex problems in the simplest way possible in various
                 business areas. He is passionate about creating a positive
                 impact through software development. He also believes in the
-                power of collaboration, integrity and most of all being
-                excellent in what he does.
+                power of <strong>collaboration</strong>,{' '}
+                <strong>integrity</strong> and most of all{' '}
+                <strong>being excellent</strong> in what he does.
               </p>
 
               <div className="signature">

@@ -1,5 +1,6 @@
 import React from 'react';
 import './skill.section.scss';
+import SkillProficiency from './SkillProficiency';
 
 const SkillSection = () => {
   return (
@@ -27,57 +28,41 @@ const SkillSection = () => {
                 {/* Skill proficiency Right */}
 
                 <div className="rating-bar bar-left">
-                  <label>Javascript</label>
-                  <span className="rating-count pull-right">90%</span>
-                  <div className="skill-progress">
-                    <div className="progress">
-                      <div className="progress-bar"></div>
-                    </div>
-                  </div>
-
-                  <label>React</label>
-                  <span className="rating-count pull-right">90%</span>
-                  <div className="skill-progress">
-                    <div className="progress">
-                      <div className="progress-bar bar-1"></div>
-                    </div>
-                  </div>
-
-                  <label>HTML, CSS & SASS</label>
-                  <span className="rating-count pull-right">90%</span>
-                  <div className="skill-progress">
-                    <div className="progress">
-                      <div className="progress-bar bar-2"></div>
-                    </div>
-                  </div>
+                  <SkillProficiency
+                    skillName="JavaScript"
+                    skillPercentage="90"
+                    barColor=""
+                  />
+                  <SkillProficiency
+                    skillName="JavaScript"
+                    skillPercentage="90"
+                    barColor="bar-1"
+                  />
+                  <SkillProficiency
+                    skillName="JavaScript"
+                    skillPercentage="90"
+                    barColor="bar-2"
+                  />
                 </div>
 
                 {/* Skill proficiency Left */}
 
                 <div className="rating-bar bar-right">
-                  <label>Node/Express</label>
-                  <span className="rating-count pull-right">75%</span>
-                  <div className="skill-progress">
-                    <div className="progress">
-                      <div className="progress-bar bar-3"></div>
-                    </div>
-                  </div>
-
-                  <label>Redux</label>
-                  <span className="rating-count pull-right">85%</span>
-                  <div className="skill-progress">
-                    <div className="progress">
-                      <div className="progress-bar bar-4"></div>
-                    </div>
-                  </div>
-
-                  <label>Apollo/GraphQL</label>
-                  <span className="rating-count pull-right">60%</span>
-                  <div className="skill-progress">
-                    <div className="progress">
-                      <div className="progress-bar bar-5"></div>
-                    </div>
-                  </div>
+                  <SkillProficiency
+                    skillName="Node/Express"
+                    skillPercentage="75"
+                    barColor="bar-3"
+                  />
+                  <SkillProficiency
+                    skillName="Redux"
+                    skillPercentage="85"
+                    barColor="bar-4"
+                  />
+                  <SkillProficiency
+                    skillName="Apollo/GraphQL"
+                    skillPercentage="90"
+                    barColor="bar-5"
+                  />
                 </div>
               </div>
 
