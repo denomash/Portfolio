@@ -34,14 +34,19 @@ const SkillSection = () => {
                     barColor=""
                   />
                   <SkillProficiency
-                    skillName="JavaScript"
+                    skillName="React"
                     skillPercentage="90"
                     barColor="bar-1"
                   />
                   <SkillProficiency
-                    skillName="JavaScript"
+                    skillName="HTML, CSS & SASS"
                     skillPercentage="90"
                     barColor="bar-2"
+                  />
+                  <SkillProficiency
+                    skillName="React Native"
+                    skillPercentage="60"
+                    barColor="bar-6"
                   />
                 </div>
 
@@ -60,7 +65,7 @@ const SkillSection = () => {
                   />
                   <SkillProficiency
                     skillName="Apollo/GraphQL"
-                    skillPercentage="90"
+                    skillPercentage="60"
                     barColor="bar-5"
                   />
                 </div>
