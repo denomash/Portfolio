@@ -1,11 +1,5 @@
 import React from 'react';
 
-import plugaddons from '../assets/accelerate.png';
-import wajomba from '../assets/childcare.png';
-import fastFood from '../assets/fast-food.png';
-import burgetify from '../assets/burgetify-2.png';
-import spaceX from '../assets/spaceX.png';
-
 import './portfolio.scss';
 
 const Portfolio = () => {
