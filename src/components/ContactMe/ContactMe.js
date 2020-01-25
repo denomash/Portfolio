@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import Validator from 'validator';
+import emailjs from 'emailjs-com';
+import * as firebase from 'firebase';
+import * as functions from 'firebase-functions';
+import * as admin from 'firebase-admin';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -12,7 +16,8 @@ import {
 
 import './contact-me.scss';
 import SocialLinks from '../SocialLinks/SocialLinks';
-import mailServer from './MailServer';
+
+admin.initializeApp();
 
 class ContactMe extends Component {
   state = {
@@ -50,7 +55,29 @@ class ContactMe extends Component {
     this.setState({ errors });
 
     if (Object.keys(errors).length === 0) {
-      console.log('It was a success');
+      const { fullName, email, subject, message } = this.state.data;
+      let templateParams = {
+        senderName: fullName,
+        senderEmail: email,
+        subject,
+        message
+      };
+
+      const gmailContactService = functions.config().mailservice
+        .gmailcontactservice;
+      const templateId = functions.config().mailservice.templateid;
+      const userId = functions.config().mailservice.userid;
+
+      emailjs
+        .send(gmailContactService, templateId, templateParams, userId)
+        .then(
+          function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+          },
+          function(error) {
+            console.log('FAILED...', error);
+          }
+        );
     }
   };
 
