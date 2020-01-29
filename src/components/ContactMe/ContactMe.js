@@ -67,25 +67,22 @@ class ContactMe extends Component {
 
       emailjs.send(serviceID, templateID, templateParams, userID).then(
         response => {
-          console.log('SUCCESS!', response.status, response.text);
           toast.success('Message sent successfuly');
+          setTimeout(
+            this.setState({
+              data: {
+                fullName: '',
+                email: '',
+                subject: '',
+                message: ''
+              }
+            }),
+            1500
+          );
         },
         error => {
-          console.log('FAILED...', error);
           toast.error('Message not sent. Something went wrong');
         }
-      );
-
-      setTimeout(
-        this.setState({
-          data: {
-            fullName: '',
-            email: '',
-            subject: '',
-            message: ''
-          }
-        }),
-        1500
       );
     }
   };
