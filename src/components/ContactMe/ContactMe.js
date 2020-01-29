@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Validator from 'validator';
 import emailjs from 'emailjs-com';
+// import { ToastsContainer, ToastsStore } from 'react-toasts';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -62,22 +65,27 @@ class ContactMe extends Component {
       const templateID = process.env.REACT_APP_TEMPLATE_ID;
       const userID = process.env.REACT_APP_USER_ID;
 
-      console.log(
-        'serviceID',
-        serviceID,
-        'templateID',
-        templateID,
-        'userID',
-        userID
+      emailjs.send(serviceID, templateID, templateParams, userID).then(
+        response => {
+          console.log('SUCCESS!', response.status, response.text);
+          toast.success('Message sent successfuly');
+        },
+        error => {
+          console.log('FAILED...', error);
+          toast.error('Message not sent. Something went wrong');
+        }
       );
 
-      emailjs.send(serviceID, templateID, templateParams, userID).then(
-        function(response) {
-          console.log('SUCCESS!', response.status, response.text);
-        },
-        function(error) {
-          console.log('FAILED...', error);
-        }
+      setTimeout(
+        this.setState({
+          data: {
+            fullName: '',
+            email: '',
+            subject: '',
+            message: ''
+          }
+        }),
+        1500
       );
     }
   };
@@ -245,6 +253,7 @@ class ContactMe extends Component {
                     </div>
                   </form>
                 </div>
+                <ToastContainer />
               </div>
             </div>
           </div>
