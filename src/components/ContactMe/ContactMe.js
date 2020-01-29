@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Validator from 'validator';
 import emailjs from 'emailjs-com';
-import * as firebase from 'firebase';
-import * as functions from 'firebase-functions';
-import * as admin from 'firebase-admin';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -16,8 +13,6 @@ import {
 
 import './contact-me.scss';
 import SocialLinks from '../SocialLinks/SocialLinks';
-
-admin.initializeApp();
 
 class ContactMe extends Component {
   state = {
@@ -63,21 +58,27 @@ class ContactMe extends Component {
         message
       };
 
-      const gmailContactService = functions.config().mailservice
-        .gmailcontactservice;
-      const templateId = functions.config().mailservice.templateid;
-      const userId = functions.config().mailservice.userid;
+      const serviceID = process.env.REACT_APP_GMAIL_CONTACT_SERVICE;
+      const templateID = process.env.REACT_APP_TEMPLATE_ID;
+      const userID = process.env.REACT_APP_USER_ID;
 
-      emailjs
-        .send(gmailContactService, templateId, templateParams, userId)
-        .then(
-          function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-          },
-          function(error) {
-            console.log('FAILED...', error);
-          }
-        );
+      console.log(
+        'serviceID',
+        serviceID,
+        'templateID',
+        templateID,
+        'userID',
+        userID
+      );
+
+      emailjs.send(serviceID, templateID, templateParams, userID).then(
+        function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        function(error) {
+          console.log('FAILED...', error);
+        }
+      );
     }
   };
 
