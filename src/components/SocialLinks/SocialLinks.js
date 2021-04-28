@@ -1,14 +1,14 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
   faTwitter,
   faGooglePlusG,
   faLinkedinIn,
-  faGithubAlt
-} from '@fortawesome/free-brands-svg-icons';
+  faGithubAlt,
+} from "@fortawesome/free-brands-svg-icons";
 
-import './sociallinks.scss';
+import "./sociallinks.scss";
 
 const SocialLinks = () => {
   return (
@@ -18,6 +18,7 @@ const SocialLinks = () => {
           href="https://github.com/denomash/"
           target="_blank"
           className="github"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faGithubAlt} />
         </a>
@@ -27,22 +28,23 @@ const SocialLinks = () => {
           href="https://www.linkedin.com/in/dennis-macharia-206762137/"
           target="_blank"
           className="linkedin"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
       </div>
       <div>
-        <a href="#" className="facebook">
+        <a href="/#" rel="noopener noreferrer" className="facebook">
           <FontAwesomeIcon icon={faFacebookF} />
         </a>
       </div>
       <div>
-        <a href="#" className="twitter">
+        <a href="/#" rel="noopener noreferrer" className="twitter">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
       </div>
       <div>
-        <a href="#" className="google">
+        <a href="/#" rel="noopener noreferrer" className="google">
           <FontAwesomeIcon icon={faGooglePlusG} />
         </a>
       </div>

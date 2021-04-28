@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   color: #2d3038;
@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 80rem;
+  width: 85%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -36,9 +36,18 @@ body {
 // }
 .row {
   display: flex;
-  flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.message {
+  flex-direction: column;
+}
+
+.name-email {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
 }
 
 .u-padding-top {
@@ -52,7 +61,7 @@ body {
   position: relative;
   width: 45%;
   min-height: 1px;
-  padding-right: 15px;
+  // padding-right: 15px;
   padding-left: 15px;
 }
 
@@ -139,5 +148,35 @@ body {
       background-color: #fff;
       border: 1px solid #3c70b4;
     }
+  }
+}
+
+@media only screen and (max-width: 1308px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-md-4 {
+    max-width: fit-content;
+  }
+
+  .section-content {
+    max-width: unset !important;
+  }
+
+  .col-md-8 {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .name-email {
+    flex-direction: column;
+  }
+  .col-sm-6 {
+    width: 96%;
+    padding-left: 0;
   }
 }

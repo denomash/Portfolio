@@ -1,6 +1,6 @@
-import React from 'react';
-import './skill.section.scss';
-import SkillProficiency from './SkillProficiency';
+import React from "react";
+import "./skill.section.scss";
+import SkillProficiency from "./SkillProficiency";
 
 const SkillSection = () => {
   return (
@@ -53,6 +53,11 @@ const SkillSection = () => {
                 {/* Skill proficiency Left */}
 
                 <div className="rating-bar bar-right">
+                  <SkillProficiency
+                    skillName="Typescript"
+                    skillPercentage="90"
+                    barColor=""
+                  />
                   <SkillProficiency
                     skillName="Node/Express"
                     skillPercentage="75"

@@ -1,4 +1,9 @@
 .portfolio {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &__item {
     position: relative;
     width: 100%;
@@ -23,23 +28,35 @@
 
     &-top {
       height: 90px;
-      background-image: url('../assets/accelerate.png');
+      background-image: url("../assets/accelerate.png");
       background-size: cover;
       clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     }
     &-top--1 {
-      background-image: url('../assets/childcare.png');
+      height: 90px;
+      background-image: url("../assets/childcare.png");
+      background-size: cover;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     }
     &-top--2 {
-      background-image: url('../assets/burgetify-2.png');
+      height: 90px;
+      background-image: url("../assets/burgetify-2.png");
+      background-size: cover;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     }
     &-top--3 {
-      background-image: url('../assets/fast-food.png');
+      height: 90px;
+      background-image: url("../assets/fast-food.png");
+      background-size: cover;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     }
 
     &-content {
-      text-align: center;
-      padding: 1rem 6rem;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      margin-top: 20px;
 
       ul {
         list-style: none;

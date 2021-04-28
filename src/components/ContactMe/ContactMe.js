@@ -1,51 +1,51 @@
-import React, { Component } from 'react';
-import Validator from 'validator';
-import emailjs from 'emailjs-com';
+import React, { Component } from "react";
+import Validator from "validator";
+import emailjs from "emailjs-com";
 // import { ToastsContainer, ToastsStore } from 'react-toasts';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapSigns,
   faPhoneAlt,
   faEnvelope,
   faExternalLinkAlt,
-  faCommentDots
-} from '@fortawesome/free-solid-svg-icons';
+  faCommentDots,
+} from "@fortawesome/free-solid-svg-icons";
 
-import './contact-me.scss';
-import SocialLinks from '../SocialLinks/SocialLinks';
+import "./contact-me.scss";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 class ContactMe extends Component {
   state = {
     data: {
-      fullName: '',
-      email: '',
-      subject: '',
-      message: ''
+      fullName: "",
+      email: "",
+      subject: "",
+      message: "",
     },
-    errors: {}
+    errors: {},
   };
 
-  onChange = e => {
+  onChange = (e) => {
     this.setState({
-      data: { ...this.state.data, [e.target.name]: e.target.value }
+      data: { ...this.state.data, [e.target.name]: e.target.value },
     });
   };
 
-  validate = data => {
+  validate = (data) => {
     const errors = {};
 
     if (!data.fullName.trim()) errors.name = "This field can't be blank";
-    if (!Validator.isEmail(data.email)) errors.email = 'Invalid Email';
+    if (!Validator.isEmail(data.email)) errors.email = "Invalid Email";
     if (!data.subject.trim()) errors.subject = "This field can't be blank";
     if (!data.message.trim()) errors.message = "This field can't be blank";
 
     return errors;
   };
 
-  onSubmit = e => {
+  onSubmit = (e) => {
     e.preventDefault();
 
     const errors = this.validate(this.state.data);
@@ -58,7 +58,7 @@ class ContactMe extends Component {
         senderName: fullName,
         senderEmail: email,
         subject,
-        message
+        message,
       };
 
       const serviceID = process.env.REACT_APP_GMAIL_CONTACT_SERVICE;
@@ -66,22 +66,22 @@ class ContactMe extends Component {
       const userID = process.env.REACT_APP_USER_ID;
 
       emailjs.send(serviceID, templateID, templateParams, userID).then(
-        response => {
-          toast.success('Message sent successfuly');
+        (response) => {
+          toast.success("Message sent successfuly");
           setTimeout(
             this.setState({
               data: {
-                fullName: '',
-                email: '',
-                subject: '',
-                message: ''
-              }
+                fullName: "",
+                email: "",
+                subject: "",
+                message: "",
+              },
             }),
             1500
           );
         },
-        error => {
-          toast.error('Message not sent. Something went wrong');
+        (error) => {
+          toast.error("Message not sent. Something went wrong");
         }
       );
     }
@@ -162,43 +162,45 @@ class ContactMe extends Component {
                     </div>
                   </div>
                   <form onSubmit={this.onSubmit}>
-                    <div className="row">
-                      <div className="col-sm-6">
-                        <div className="form-group">
-                          <input
-                            type="text"
-                            name="fullName"
-                            className="form-control"
-                            value={data.fullName}
-                            onChange={this.onChange}
-                            required
-                            placeholder="Full Name"
-                          />
-                        </div>
-                        {errors.name && (
-                          <div className="form-group__errors">
-                            {errors.name}
+                    <div className="row message">
+                      <div className="name-email">
+                        <div className="col-sm-6">
+                          <div className="form-group">
+                            <input
+                              type="text"
+                              name="fullName"
+                              className="form-control"
+                              value={data.fullName}
+                              onChange={this.onChange}
+                              required
+                              placeholder="Full Name"
+                            />
                           </div>
-                        )}
-                      </div>
+                          {errors.name && (
+                            <div className="form-group__errors">
+                              {errors.name}
+                            </div>
+                          )}
+                        </div>
 
-                      <div className="col-sm-6">
-                        <div className="form-group">
-                          <input
-                            type="email"
-                            name="email"
-                            className="form-control"
-                            value={data.email}
-                            onChange={this.onChange}
-                            required
-                            placeholder="Your email"
-                          />
-                        </div>
-                        {errors.email && (
-                          <div className="form-group__errors">
-                            {errors.email}
+                        <div className="col-sm-6">
+                          <div className="form-group">
+                            <input
+                              type="email"
+                              name="email"
+                              className="form-control"
+                              value={data.email}
+                              onChange={this.onChange}
+                              required
+                              placeholder="Your email"
+                            />
                           </div>
-                        )}
+                          {errors.email && (
+                            <div className="form-group__errors">
+                              {errors.email}
+                            </div>
+                          )}
+                        </div>
                       </div>
 
                       <div className="col-sm-12">

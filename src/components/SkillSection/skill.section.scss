@@ -9,7 +9,7 @@
   margin-bottom: 50px;
 
   h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
     color: #2d3038;
@@ -147,4 +147,15 @@
 
 .c-2 {
   background-color: #f26522;
+}
+
+@media only screen and (max-width: 1050px) {
+  .progress-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rating-bar {
+    width: 100%;
+  }
 }

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './portfolio.scss';
+import "./portfolio.scss";
 
 const Portfolio = () => {
   return (
@@ -26,7 +26,47 @@ const Portfolio = () => {
               </div>
 
               <div className="portfolio__content">
-                <div className="row">
+                <div className="portfolio__row">
+                  {/* ----------- */}
+                  <div className="col-sm-6">
+                    <div className="portfolio__item">
+                      <div className="portfolio__item-top"></div>
+                      <div className="portfolio__item-title">Khalon Quill</div>
+
+                      <div className="portfolio__item-content">
+                        <ul>
+                          <li>React</li>
+                          <li>CSS</li>
+                          <li>HTML5</li>
+                        </ul>
+                      </div>
+
+                      <div className="portfolio__overlay">
+                        <div className="portfolio__overlay-desc">
+                          Khalon Quill was built from the ground up to
+                          facilitate lightning fast communication &
+                          collaboration between digital teams
+                        </div>
+                        <div className="portfolio__overlay-cont">
+                          <a
+                            href="https://khalon-quil-website.appspot.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            demo
+                          </a>
+                          {/* <a
+                            href=""
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            source
+                          </a> */}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <div className="col-sm-6">
                     <div className="portfolio__item">
                       <div className="portfolio__item-top"></div>
@@ -50,12 +90,14 @@ const Portfolio = () => {
                           <a
                             href="https://plug-addons.firebaseapp.com/"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             demo
                           </a>
                           <a
                             href="https://github.com/denomash/plug-Addons-site"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             source
                           </a>
@@ -87,12 +129,14 @@ const Portfolio = () => {
                           <a
                             href="https://happy-rosalind-b11033.netlify.com/"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             demo
                           </a>
                           <a
                             href="https://github.com/younggeeks/childcare-UII"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             source
                           </a>
@@ -124,12 +168,14 @@ const Portfolio = () => {
                           <a
                             href="https://burgetify.herokuapp.com/"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             demo
                           </a>
                           <a
                             href="https://github.com/denomash/budgetify"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             source
                           </a>
@@ -161,12 +207,14 @@ const Portfolio = () => {
                           <a
                             href="https://foodapiv2.docs.apiary.io/#"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             demo
                           </a>
                           <a
                             href="https://github.com/denomash/food-api"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             source
                           </a>
